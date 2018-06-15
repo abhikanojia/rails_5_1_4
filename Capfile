@@ -1,13 +1,12 @@
 # Load DSL and set up stages
 require "capistrano/setup"
 
+
 # Include default deployment tasks
-require 'capistrano/rails'
 require "capistrano/deploy"
 
 require 'capistrano/bundler'
 require 'capistrano/rails'
-require 'capistrano/rbenv'
 
 # Load the SCM plugin appropriate to your project:
 #
