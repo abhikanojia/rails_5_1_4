@@ -3,6 +3,9 @@ lock "~> 3.11.0"
 
 set :application, "rails_5_1_4"
 set :repo_url, "git@github.com:abhikanojia/rails_5_1_4.git"
+set :default_stage, "staging"
+
+set :stages, ["staging", "production"]
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
