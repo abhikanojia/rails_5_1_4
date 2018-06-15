@@ -24,6 +24,8 @@ set :rvm_map_bins, %w{gem rake ruby rails bundle}
 append :linked_dirs, '.bundle'
 set :rbenv_roles, :all # default value
 
+set :bundle_without, %w{test}.join(' ')
+
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
 
