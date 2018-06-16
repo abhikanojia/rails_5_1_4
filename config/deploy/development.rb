@@ -1,3 +1,8 @@
+set :stage, :development
+set :rails_env, :development
+
+set :branch, proc { `git rev-parse --abbrev-ref development`.chomp }
+
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
