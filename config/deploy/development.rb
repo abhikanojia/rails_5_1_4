@@ -1,7 +1,8 @@
 set :stage, :development
-set :rails_env, :development
 
-set :branch, proc { `git rev-parse --abbrev-ref development`.chomp }
+set :branch, 'development'
+set :rails_env, 'development'
+set :passenger_restart_with_touch, true
 
 # server-based syntax
 # ======================
