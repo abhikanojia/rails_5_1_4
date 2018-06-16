@@ -4,6 +4,8 @@ set :branch, 'development'
 set :rails_env, 'development'
 set :passenger_restart_with_touch, true
 
+set :deploy_to, "/home/deploy/rails_5_1_4_development"
+
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
